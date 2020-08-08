@@ -1,0 +1,56 @@
+<html>
+<head>
+
+</head>
+<body>
+<form method="post">
+    <fieldset>
+        <legend>Update Employee</legend>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td><%= id %></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="empName" value="<%= empName %>"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" name="empPhone" value="<%= empPhone %>"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="empAddress" value="<%= empAddress %>"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <select name="empGender" value="<%= empGender %>">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Designation</td>
+                <td>
+                    <select name="empDesignation" value="<%= empDesignation %>">
+                        <option>Intern</option>
+                        <option>Software Engineer</option>
+                        <option>Project Manager</option>
+                        <option>Director</option>
+                        <option>CEO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Save"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<a href="/logout">Logout</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin page</title>
+</head>
+<body>
+	<h1>Welcome Admin!</h1>
+	<button type="button" name="addEmp" id="addEmp" onclick="toAddEmployee()">Add Employee</button><br/>
+	<button type="button" name="allEmpList" id="allEmpList" onclick="toAllEmployee()">All Employee List</button><br/>
+	<a href="/logout">Logout</a>
+<script>
+	function toAddEmployee() {
+		window.location.href="/admin/addEmployee";
+	}
+	function toAllEmployee() {
+		window.location.href="/admin/allEmployeeList";
+	}
+</script>
+</body>
+</html>

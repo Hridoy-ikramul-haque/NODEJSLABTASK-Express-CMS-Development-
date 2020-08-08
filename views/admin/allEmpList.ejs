@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>All Employee list</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Designation</th>
+        <th>action</th>
+    </tr>
+<% allEmpList.forEach(function (emp) { %>
+        <tr><td><%= emp.id %></td>
+        <td><%= emp.empName %></td>
+        <td><%= emp.empPhone %></td>
+        <td><%= emp.empAddress %></td>
+        <td><%= emp.empGender %></td>
+        <td><%= emp.empDesignation %></td>
+        <td><a href="/admin/update/<%= emp.id %>">Update</a><br/><a href="/admin/delete/<%= emp.id %>">Delete</a></td></tr>
+    <% }) %>
+</table>
+
+<a href="/logout">Logout</a>
+</body>
+</html>
